@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MIR Labs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="images/mirlabs-logo.png" alt="MIR Labs Logo" class="logo">
+                <h1>Machine Intelligence Research Labs<sup>TM</sup></h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-item">HOME</a>
+                <a href="about.html" class="nav-item">ABOUT US</a>
+                <a href="projects.html" class="nav-item">PROJECTS</a>
+                <a href="membership.html" class="nav-item">MEMBERSHIP</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-item dropdown-toggle">EVENTS</a>
+                    <div class="dropdown-content">
+                        <a href="conferences.html">Conferences</a>
+                        <a href="journals.html">Journals</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item active">CONTACT US</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Contact Us</h1>
+            <p>Get in touch with MIR Labs for inquiries, collaborations, or membership information</p>
+            <div class="divider"></div>
+        </div>
+
+        <div class="grid grid-cols-2">
+            <!-- Contact Form -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Send us a Message</h2>
+                </div>
+                <div class="card-content">
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required placeholder="Enter your email address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required placeholder="Enter message subject">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" required placeholder="Enter your message" rows="6"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <!-- Contact Info Card -->
+                <div class="card mb-6">
+                    <div class="card-header">
+                        <h2 class="card-title">Contact Information</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="flex items-start mb-4">
+                            <span class="text-blue-600 text-xl" style="margin-right: 12px;">📧</span>
+                            <div>
+                                <h3 class="font-semibold">Email</h3>
+                                <p class="text-gray-600">info@mirlabs.org</p>
+                                <p class="text-gray-600">admin@mirlabs.org</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start mb-4">
+                            <span class="text-blue-600 text-xl" style="margin-right: 12px;">📞</span>
+                            <div>
+                                <h3 class="font-semibold">Phone</h3>
+                                <p class="text-gray-600">+1 (555) 123-4567</p>
+                                <p class="text-gray-600">+65 6123-4567 (Singapore)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start mb-4">
+                            <span class="text-blue-600 text-xl" style="margin-right: 12px;">📍</span>
+                            <div>
+                                <h3 class="font-semibold">Address</h3>
+                                <p class="text-gray-600">
+                                    MIR Labs International<br>
+                                    123 Research Drive<br>
+                                    Singapore 123456
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <span class="text-blue-600 text-xl" style="margin-right: 12px;">🕒</span>
+                            <div>
+                                <h3 class="font-semibold">Office Hours</h3>
+                                <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM (SGT)</p>
+                                <p class="text-gray-600">Saturday: 9:00 AM - 1:00 PM (SGT)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Card -->
+                <div class="card mb-6">
+                    <div class="card-header">
+                        <h3 class="text-xl font-bold">Quick Links</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="text-sm">
+                            <p class="mb-2">
+                                <strong>Membership Inquiries:</strong> membership@mirlabs.org
+                            </p>
+                            <p class="mb-2">
+                                <strong>Conference Submissions:</strong> conferences@mirlabs.org
+                            </p>
+                            <p class="mb-2">
+                                <strong>Publication Inquiries:</strong> publications@mirlabs.org
+                            </p>
+                            <p>
+                                <strong>Partnership Opportunities:</strong> partnerships@mirlabs.org
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-xl font-bold">Follow Us</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="flex gap-4">
+                            <a href="#" class="btn btn-outline" style="font-size: 0.875rem; padding: 8px 16px;">LinkedIn</a>
+                            <a href="#" class="btn btn-outline" style="font-size: 0.875rem; padding: 8px 16px;">Twitter</a>
+                            <a href="#" class="btn btn-outline" style="font-size: 0.875rem; padding: 8px 16px;">ResearchGate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Section (Optional) -->
+        <section class="card mt-8">
+            <div class="card-header">
+                <h2 class="card-title">Our Location</h2>
+            </div>
+            <div class="card-content">
+                <div style="background-color: #f3f4f6; height: 300px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #6b7280;">
+                    <div class="text-center">
+                        <div style="font-size: 3rem; margin-bottom: 16px;">🗺️</div>
+                        <p>Interactive Map Coming Soon</p>
+                        <p class="text-sm">MIR Labs International, Singapore</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>MIR Labs</h3>
+                    <p>Machine Intelligence Research Labs - A non-profit international scientific organization promoting
+                        excellence in Computer Science and Information Technology.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="list-none">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="conferences.html">Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p>Email: info@mirlabs.org<br>
+                    Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Machine Intelligence Research Labs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Form Handling -->
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Simple validation
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('Thank you for your message! We will get back to you soon.');
+            
+            // Reset form
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>

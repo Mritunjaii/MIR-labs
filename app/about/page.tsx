@@ -1,0 +1,135 @@
+import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+
+export default function AboutPage() {
+  return (
+    <div className="max-w-7xl mx-auto p-6">
+      {/* Page Header */}
+      <div className="text-center py-12 mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">About Us!</h1>
+        <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
+      </div>
+
+      {/* Three Column Layout */}
+      <div className="grid md:grid-cols-3 gap-8 mb-12">
+        {/* Column 1 - About MIR Labs */}
+        <Card className="h-full">
+          <CardContent className="p-6">
+            <h2 className="text-xl font-bold text-gray-800 mb-4">About MIR Labs</h2>
+            <p className="text-gray-700 leading-relaxed text-sm">
+              MIR Labs Society is a non-profit international scientific organization of eminent scholars affianced in
+              Soft Computing Computer Science and Information Technology. The MIR Labs Society members include research
+              and development center heads, faculty deans, department heads, professors, research scientists, engineers,
+              scholars, experienced software development directors, managers and engineers, university postgraduate and
+              undergraduate engineering and technology students, etc.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Column 2 - Mission & Role */}
+        <Card className="h-full">
+          <CardContent className="p-6">
+            <h2 className="text-xl font-bold text-gray-800 mb-4">Our Mission</h2>
+            <p className="text-gray-700 leading-relaxed text-sm">
+              MIR Labs Society plays a prominent role and promotes developments in Soft Computing, Computer Science and
+              Information Technology in a wide range of ways. The mission of MIR Labs Society is to foster and conduct
+              collaborative interdisciplinary research in state-of-the-art methodologies and technologies within its
+              areas of expertise. MIR Labs Society organizes conferences, workshops, and provides sponsor or technical
+              support to conferences and workshops; it also publishes high quality academic international journals in
+              related fields.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Column 3 - Goals & Services */}
+        <Card className="h-full">
+          <CardContent className="p-6">
+            <h2 className="text-xl font-bold text-gray-800 mb-4">Our Goals</h2>
+            <p className="text-gray-700 leading-relaxed text-sm">
+              MIR Labs Society seeks to encourage regional and international communication and collaboration; promote
+              professional interaction and lifelong learning; recognize outstanding contributions of individuals and
+              organizations; encourage scholar researchers to pursue studies and careers in Computer Science and
+              Information Technology. We also welcome research that highlights successful modern applications of
+              Computer Science and Information Technology, such as Agriculture, Biomedicine, Bioinformatics, Business,
+              Chemical, Environment, Education, E-Learning, Geography, Mathematics and Physics.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Additional Information */}
+      <Card className="mb-8">
+        <CardContent className="p-8">
+          <p className="text-gray-700 leading-relaxed text-lg mb-6">
+            All papers in our conference proceedings will be published by the well known press, and will be submitted to
+            the major indexing services for indexing.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed text-lg mb-6">
+            We offer the Intercontinental higher education links. We endow into higher education and manage pertinent
+            institutes. We provide the services of the exchanging of worldwide education and culture. We prepare,
+            promote, arrange, organize, implement and conduct international academic visiting and learning tours to
+            Singapore with issuing the invitation letter for visa of Singapore and other countries and arranging the
+            programs of visiting, meeting and tours.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed text-lg">
+            Our foremost objective is to serve as an organization for inspiring and guiding its members to formulate the
+            universal goals and responsibilities to build the research and development activities in the field soft
+            computing for the service of mankind and the evolution of general welfare.
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* Director and Chairperson Messages */}
+      <div className="grid md:grid-cols-2 gap-8 mb-8">
+        {/* Director */}
+        <Card>
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-bold text-gray-800 mb-2">Director</h2>
+            <h3 className="text-lg font-semibold text-blue-600 mb-4">Director's Message</h3>
+            <p className="text-gray-700 leading-relaxed text-sm">
+              Cras sagittis neque id tortor dictum tincidunt. Nulla volutpat cursus metus, sed pulvinar nibh vulputate
+              a. Curabitur tristique pharetra elit quis tincidunt. Nulla sed libero hendrerit, condimentum velit
+              tincidunt, sollicitudin tortor. Nulla volutpat lacinia tortor. Aenean auctor consectetur adipiscing. Proin
+              venenatis, lacus in lacinia dapibus, urna lectus euismod erat, mollis vehicula diam elit sed est. Integer
+              libero ligula, tincidunt eget tincidunt ut, dignissim quis sem. Sed interdum auctor lacus id malesuada.
+              Aenean in mauris ac sapien auctor ultrices at pretium dui. Maecenas nec dictum turpis. Nam ipsum sapien,
+              commodo at ligula ut, lobortis congue ante. Sed tincidunt dolor vitae libero congue pulvinar. In ultricies
+              arcu vitae leo feugiat dignissim. Suspendisse potenti. Vivamus et ornare eros.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Chairperson */}
+        <Card>
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-bold text-gray-800 mb-2">Chairperson</h2>
+            <h3 className="text-lg font-semibold text-blue-600 mb-4">Chairperson's Message</h3>
+            <p className="text-gray-700 leading-relaxed text-sm mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac fringilla nulla, sit amet consequat
+              eros. Pellentesque pharetra blandit commodo. Phasellus massa nisl, feugiat ac bibendum et, dictum id
+              ipsum. Quisque sit amet accumsan tortor. Etiam luctus, est ac iaculis posuere, justo elit aliquam risus, a
+              interdum odio elit eleifend nisl. In vulputate lobortis lectus in eleifend. Etiam eget luctus sapien.
+              Curabitur auctor volutpat enim sit amet vulputate. Nullam fringilla odio eu nisl tempus venenatis.
+            </p>
+            <p className="text-gray-700 leading-relaxed text-sm">
+              Integer feugiat, nunc eu venenatis porttitor, tellus tortor sagittis enim, sed viverra mauris diam vel
+              sem. Maecenas ac orci ipsum. Nunc pellentesque purus at neque mattis consectetur. Pellentesque bibendum
+              eros ante, ut aliquam nunc vestibulum ac. Praesent dignissim nibh ac nisl tempor ultricies. Morbi vel
+              dapibus mauris. Sed eu lorem non mauris vehicula posuere malesuada id ipsum.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Call to Action */}
+      <div className="text-center py-8">
+        <Button asChild size="lg">
+          <Link href="/contact">Contact Us!</Link>
+        </Button>
+      </div>
+    </div>
+  )
+}
